@@ -44,11 +44,13 @@ Troubleshooting
    Just overload plantuml.sourcepath and the magic will happen again.
    e.g.:
 
+```groovy
     plantuml {
        sourcePath = 'A/src/main/java' +
                ':B/src/main/java' +
                ':C/src/main/java'
     }
+```
 
 Simple Example
 ==============
