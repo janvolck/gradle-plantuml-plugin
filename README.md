@@ -16,7 +16,7 @@ When running the plantuml plugin, the plugin will add the following options to t
         options.docFilesSubDirs = true
     }
 
-This is necessary because by default the javadoc process does noet process the doc-files folders.
+This is necessary because by default the javadoc process does not process the doc-files folders.
 
 
 How To
