@@ -26,7 +26,7 @@ e.g.:
 
     buildscript {
           dependencies {
-              classpath 'be.jlrhome.gradle:plantumlPlugin:0.0.+'
+              classpath 'be.jlrhome.gradle:plantumlPlugin:0.1.+'
           }
       }
 
@@ -57,7 +57,7 @@ Simple Example
 
     buildscript {
         dependencies {
-            classpath 'be.jlrhome.gradle:plantumlPlugin:0.0.+'
+            classpath 'be.jlrhome.gradle:plantumlPlugin:0.1.+'
         }
     }
 
