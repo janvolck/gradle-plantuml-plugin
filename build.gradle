@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 group = 'be.jlr-home.gradle'
-version = '0.1.1-SNAPSHOT'
+version = '0.1.1'
 
 repositories {
     mavenCentral()
@@ -13,7 +13,7 @@ dependencies {
     compile gradleApi()
     compile localGroovy()
 
-    compile 'net.sourceforge.plantuml:plantuml:7995'
+    compile 'net.sourceforge.plantuml:plantuml:8001'
 }
 
 task javadocJar(type: Jar) {

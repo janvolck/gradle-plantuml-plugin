@@ -12,7 +12,7 @@ class GeneratePlantumlTask extends DefaultTask {
 
     boolean processingSingleFile(final File file, Option option) throws IOException, InterruptedException {
 
-        project.logger.debug("Processing " + file.getAbsolutePath())
+        project.logger.debug("Processing " + file.getAbsolutePath() + " to " + option.getOutputDir())
 
         final SourceFileReader sourceFileReader = new SourceFileReader(
                 new Defines(),
@@ -31,12 +31,13 @@ class GeneratePlantumlTask extends DefaultTask {
 
     boolean doFile(final File f, final SourceFileReader sourceFileReader, Option option) throws IOException, InterruptedException {
 
+        project.logger.debug("GenerateImage " + f.getAbsolutePath());
         final Collection<GeneratedImage> result = sourceFileReader.getGeneratedImages();
         boolean error = false;
 
         for (GeneratedImage g : result) {
             project.logger.debug(g.toString() + " " + g.getDescription());
-            if (g.isError()) {
+            if (sourceFileReader.hasError()) {
                 error = true;
             }
         }
